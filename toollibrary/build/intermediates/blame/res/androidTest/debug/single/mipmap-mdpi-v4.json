@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "G:\\work_space\\android\\MySbsfor2N910_1.0\\toollibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-mdpi-v4\\ic_launcher.png",
+        "source": "G:\\work_space\\android\\MySbsfor2N910_1.0\\toollibrary\\build\\intermediates\\bundles\\debug\\res\\mipmap-mdpi-v4\\ic_launcher.png"
+    },
+    {
+        "merged": "G:\\work_space\\android\\MySbsfor2N910_1.0\\toollibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-mdpi-v4\\shadow.png",
+        "source": "G:\\work_space\\android\\MySbsfor2N910_1.0\\toollibrary\\build\\intermediates\\bundles\\debug\\res\\mipmap-mdpi-v4\\shadow.png"
+    },
+    {
+        "merged": "G:\\work_space\\android\\MySbsfor2N910_1.0\\toollibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-mdpi-v4\\capture.9.png",
+        "source": "G:\\work_space\\android\\MySbsfor2N910_1.0\\toollibrary\\build\\intermediates\\bundles\\debug\\res\\mipmap-mdpi-v4\\capture.9.png"
+    },
+    {
+        "merged": "G:\\work_space\\android\\MySbsfor2N910_1.0\\toollibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-mdpi-v4\\kakalib_scan_ray.png",
+        "source": "G:\\work_space\\android\\MySbsfor2N910_1.0\\toollibrary\\build\\intermediates\\bundles\\debug\\res\\mipmap-mdpi-v4\\kakalib_scan_ray.png"
+    },
+    {
+        "merged": "G:\\work_space\\android\\MySbsfor2N910_1.0\\toollibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\mipmap-mdpi-v4\\ic_scan.png",
+        "source": "G:\\work_space\\android\\MySbsfor2N910_1.0\\toollibrary\\build\\intermediates\\bundles\\debug\\res\\mipmap-mdpi-v4\\ic_scan.png"
+    }
+]

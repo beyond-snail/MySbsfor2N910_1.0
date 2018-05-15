@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "G:\\work_space\\android\\MySbsfor2N910_1.0\\toollibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\success.mp3",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\c2c9d0ced8a379ebfc73678d1902aa1031918ef8\\output\\res\\raw\\success.mp3"
+    },
+    {
+        "merged": "G:\\work_space\\android\\MySbsfor2N910_1.0\\toollibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\beep.ogg",
+        "source": "G:\\work_space\\android\\MySbsfor2N910_1.0\\toollibrary\\build\\intermediates\\bundles\\debug\\res\\raw\\beep.ogg"
+    },
+    {
+        "merged": "G:\\work_space\\android\\MySbsfor2N910_1.0\\toollibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\failure.mp3",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\c2c9d0ced8a379ebfc73678d1902aa1031918ef8\\output\\res\\raw\\failure.mp3"
+    },
+    {
+        "merged": "G:\\work_space\\android\\MySbsfor2N910_1.0\\toollibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\wosai_beep.ogg",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\c2c9d0ced8a379ebfc73678d1902aa1031918ef8\\output\\res\\raw\\wosai_beep.ogg"
+    }
+]
