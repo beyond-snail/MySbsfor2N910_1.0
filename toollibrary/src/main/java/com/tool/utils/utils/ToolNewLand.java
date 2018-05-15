@@ -269,12 +269,12 @@ public class ToolNewLand {
                 case ConstantsConfig.PAY_WAY_RECHARGE_FLOT:
                 case ConstantsConfig.PAY_WAY_RECHARGE_ALY:
                 case ConstantsConfig.PAY_WAY_RECHARGE_WX: {
-                    if (!StringUtils.isBlank(printerData.getRealize_card_num())) {
-                        data.add(new PrintItemObj("会员卡号：" + StringUtils.formatSTCardNo(printerData.getRealize_card_num())));
-                    }
-                    if (!StringUtils.isBlank(printerData.getMember_name())) {
-                        data.add(new PrintItemObj("会员姓名：" + printerData.getMember_name()));
-                    }
+//                    if (!StringUtils.isBlank(printerData.getRealize_card_num())) {
+//                        data.add(new PrintItemObj("会员卡号：" + StringUtils.formatSTCardNo(printerData.getRealize_card_num())));
+//                    }
+//                    if (!StringUtils.isBlank(printerData.getMember_name())) {
+//                        data.add(new PrintItemObj("会员姓名：" + printerData.getMember_name()));
+//                    }
                     if (!StringUtils.isBlank(printerData.getAmount())) {
                         data.add(new PrintItemObj("充值金额：" + printerData.getAmount() + "元"));
                     }
@@ -285,9 +285,9 @@ public class ToolNewLand {
                     if (printerData.getOrderAmount() != 0) {
                         data.add(new PrintItemObj("到账金额：" + StringUtils.formatIntMoney(printerData.getOrderAmount()) + "元"));
                     }
-                    if (printerData.getPacektRemian() != 0) {
-                        data.add(new PrintItemObj("账号余额：" + StringUtils.formatIntMoney(printerData.getPacektRemian()) + "元"));
-                    }
+//                    if (printerData.getPacektRemian() != 0) {
+//                        data.add(new PrintItemObj("账号余额：" + StringUtils.formatIntMoney(printerData.getPacektRemian()) + "元"));
+//                    }
                 }
                     break;
                 case ConstantsConfig.PAY_WAY_QB:
@@ -305,9 +305,9 @@ public class ToolNewLand {
                     data.add(new PrintItemObj("\r"));
                     data.add(new PrintItemObj("\r"));
 
-                    if (printerData.getPacektRemian() != 0){
-                        data.add(new PrintItemObj("会员账号余额：" + StringUtils.formatIntMoney(printerData.getPacektRemian()) + "元"));
-                    }
+//                    if (printerData.getPacektRemian() != 0){
+//                        data.add(new PrintItemObj("会员账号余额：" + StringUtils.formatIntMoney(printerData.getPacektRemian()) + "元"));
+//                    }
                     if (printerData.getPointCoverMoney() != 0) {
                         data.add(new PrintItemObj("积分抵扣金额：" + StringUtils.formatIntMoney(printerData.getPointCoverMoney()) + "元"));
                     }
@@ -360,12 +360,12 @@ public class ToolNewLand {
                     data.add(new PrintItemObj("--------------------------------"));
                     data.add(new PrintItemObj("\r"));
                     data.add(new PrintItemObj("\r"));
-                    if (!StringUtils.isBlank(printerData.getRealize_card_num())) {
-                        data.add(new PrintItemObj("会员卡号：" + StringUtils.formatSTCardNo(printerData.getRealize_card_num())));
-                    }
-                    if (!StringUtils.isBlank(printerData.getMember_name())) {
-                        data.add(new PrintItemObj("会员姓名：" + printerData.getMember_name()));
-                    }
+//                    if (!StringUtils.isBlank(printerData.getRealize_card_num())) {
+//                        data.add(new PrintItemObj("会员卡号：" + StringUtils.formatSTCardNo(printerData.getRealize_card_num())));
+//                    }
+//                    if (!StringUtils.isBlank(printerData.getMember_name())) {
+//                        data.add(new PrintItemObj("会员姓名：" + printerData.getMember_name()));
+//                    }
                     if (!StringUtils.isBlank(printerData.getAmount())) {
                         data.add(new PrintItemObj("充值金额：" + printerData.getAmount() + "元"));
                     }
@@ -376,9 +376,9 @@ public class ToolNewLand {
                     if (printerData.getOrderAmount() != 0) {
                         data.add(new PrintItemObj("到账金额：" + StringUtils.formatIntMoney(printerData.getOrderAmount()) + "元"));
                     }
-                    if (printerData.getPacektRemian() != 0) {
-                        data.add(new PrintItemObj("账号余额：" + StringUtils.formatIntMoney(printerData.getPacektRemian()) + "元"));
-                    }
+//                    if (printerData.getPacektRemian() != 0) {
+//                        data.add(new PrintItemObj("账号余额：" + StringUtils.formatIntMoney(printerData.getPacektRemian()) + "元"));
+//                    }
                 }
                     break;
                 default:
@@ -449,38 +449,38 @@ public class ToolNewLand {
 
 
 
-                            if (!StringUtils.isBlank(printerData.getCouponData())) {
-                                try {
-                                    data.clear();
-                                    data.add(new PrintItemObj("\r"));
-                                    data.add(new PrintItemObj("本次消费获得："));
-                                    aidlPrinter.printText(data);
-                                    data.clear();
-                                    Gson gson = new Gson();
-                                    List<Couponsn> couponsns = gson.fromJson(printerData.getCouponData(), new TypeToken<List<Couponsn>>() {
-                                    }.getType());
-                                    if (couponsns != null) {
-                                        for (int i = 0; i < couponsns.size(); i++) {
-                                            if (couponsns.get(i).getCoupon_type() == 2) {
-                                                data.clear();
-                                                data.add(new PrintItemObj("折扣券名称：" + couponsns.get(i).getCoupon_name()));
-                                                data.add(new PrintItemObj("折扣券折扣：" + couponsns.get(i).getCoupon_money() / 100 + "折"));
-                                                aidlPrinter.printText(data);
-                                            } else {
-                                                data.clear();
-                                                data.add(new PrintItemObj("优惠券名称：" + couponsns.get(i).getCoupon_name()));
-                                                data.add(new PrintItemObj("优惠券金额：" + StringUtils.formatIntMoney(couponsns.get(i).getCoupon_money())));
-                                                aidlPrinter.printText(data);
-                                            }
-                                        }
-                                    }
-
-                                }catch (Exception e) {
-                                    e.printStackTrace();
-                                    Log.e(TAG, "优惠券信息解析异常。。。");
-                                }
-
-                            }
+//                            if (!StringUtils.isBlank(printerData.getCouponData())) {
+//                                try {
+//                                    data.clear();
+//                                    data.add(new PrintItemObj("\r"));
+//                                    data.add(new PrintItemObj("本次消费获得："));
+//                                    aidlPrinter.printText(data);
+//                                    data.clear();
+//                                    Gson gson = new Gson();
+//                                    List<Couponsn> couponsns = gson.fromJson(printerData.getCouponData(), new TypeToken<List<Couponsn>>() {
+//                                    }.getType());
+//                                    if (couponsns != null) {
+//                                        for (int i = 0; i < couponsns.size(); i++) {
+//                                            if (couponsns.get(i).getCoupon_type() == 2) {
+//                                                data.clear();
+//                                                data.add(new PrintItemObj("折扣券名称：" + couponsns.get(i).getCoupon_name()));
+//                                                data.add(new PrintItemObj("折扣券折扣：" + couponsns.get(i).getCoupon_money() / 100 + "折"));
+//                                                aidlPrinter.printText(data);
+//                                            } else {
+//                                                data.clear();
+//                                                data.add(new PrintItemObj("优惠券名称：" + couponsns.get(i).getCoupon_name()));
+//                                                data.add(new PrintItemObj("优惠券金额：" + StringUtils.formatIntMoney(couponsns.get(i).getCoupon_money())));
+//                                                aidlPrinter.printText(data);
+//                                            }
+//                                        }
+//                                    }
+//
+//                                }catch (Exception e) {
+//                                    e.printStackTrace();
+//                                    Log.e(TAG, "优惠券信息解析异常。。。");
+//                                }
+//
+//                            }
 
                             if (printerData.getCoupon_bitmap() != null) {
                                 LogUtils.e("width: " + printerData.getCoupon_bitmap().getWidth() + " height: "
@@ -490,6 +490,16 @@ public class ToolNewLand {
                                 data.add(new PrintItemObj("扫一扫领取红包", PrinterConstant.FontScale.FONTSCALE_W_H, PrinterConstant.FontType.FONTTYPE_N,ALIGN.CENTER, false, 6));
                                 aidlPrinter.printText(data);
                                 aidlPrinter.printImage(PrinterConstant.Align.ALIGN_CENTER,  printerData.getCoupon_bitmap());
+                            }
+
+                            if (!StringUtils.isEmpty(printerData.getTitle_url())) {
+                                data.clear();
+                                data.add(new PrintItemObj("--------------------------------"));
+                                data.add(new PrintItemObj("优惠券名称：" + printerData.getTitle_url()));
+                            }
+                            if (printerData.getMoney() > 0) {
+                                data.clear();
+                                data.add(new PrintItemObj("优惠券金额：" + StringUtils.formatIntMoney(printerData.getMoney())));
                             }
 
 

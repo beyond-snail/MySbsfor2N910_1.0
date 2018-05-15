@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.zfsbs.activity.ShiftRoomShowActivity">
+    tools:context="com.zfsbs.com.sbsct.activity.ShiftRoomShowActivity">
 
     <!--<TextView-->
         <!--android:id="@+id/activity_title"-->

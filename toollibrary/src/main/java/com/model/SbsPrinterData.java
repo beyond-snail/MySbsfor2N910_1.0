@@ -67,15 +67,15 @@ public class SbsPrinterData extends DataSupport implements Serializable {
     private String flowNo; //流水号,
     private boolean isMember; //是否是会员
     private Bitmap sign_bitmap; //签名
-    private String couponData;
+//    private String couponData;
 
-    private String rechargeUpload; //充值上送
-
-
-    private int pacektRemian;
-    private String promotion_num;
-    private String realize_card_num;
-    private String member_name;
+//    private String rechargeUpload; //充值上送
+//
+//
+//    private int pacektRemian;
+//    private String promotion_num;
+//    private String realize_card_num;
+//    private String member_name;
 
 
 //	public PrinterData() {
@@ -485,53 +485,53 @@ public class SbsPrinterData extends DataSupport implements Serializable {
         this.sign_bitmap = sign_bitmap;
     }
 
-    public String getCouponData() {
-        return couponData;
-    }
-
-    public void setCouponData(String couponData) {
-        this.couponData = couponData;
-    }
-
-    public String getRechargeUpload() {
-        return rechargeUpload;
-    }
-
-    public void setRechargeUpload(String rechargeUpload) {
-        this.rechargeUpload = rechargeUpload;
-    }
-
-    public int getPacektRemian() {
-        return pacektRemian;
-    }
-
-    public void setPacektRemian(int pacektRemian) {
-        this.pacektRemian = pacektRemian;
-    }
-
-    public String getPromotion_num() {
-        return promotion_num;
-    }
-
-    public void setPromotion_num(String promotion_num) {
-        this.promotion_num = promotion_num;
-    }
-
-    public String getRealize_card_num() {
-        return realize_card_num;
-    }
-
-    public void setRealize_card_num(String realize_card_num) {
-        this.realize_card_num = realize_card_num;
-    }
-
-    public String getMember_name() {
-        return member_name;
-    }
-
-    public void setMember_name(String member_name) {
-        this.member_name = member_name;
-    }
+//    public String getCouponData() {
+//        return couponData;
+//    }
+//
+//    public void setCouponData(String couponData) {
+//        this.couponData = couponData;
+//    }
+//
+//    public String getRechargeUpload() {
+//        return rechargeUpload;
+//    }
+//
+//    public void setRechargeUpload(String rechargeUpload) {
+//        this.rechargeUpload = rechargeUpload;
+//    }
+//
+//    public int getPacektRemian() {
+//        return pacektRemian;
+//    }
+//
+//    public void setPacektRemian(int pacektRemian) {
+//        this.pacektRemian = pacektRemian;
+//    }
+//
+//    public String getPromotion_num() {
+//        return promotion_num;
+//    }
+//
+//    public void setPromotion_num(String promotion_num) {
+//        this.promotion_num = promotion_num;
+//    }
+//
+//    public String getRealize_card_num() {
+//        return realize_card_num;
+//    }
+//
+//    public void setRealize_card_num(String realize_card_num) {
+//        this.realize_card_num = realize_card_num;
+//    }
+//
+//    public String getMember_name() {
+//        return member_name;
+//    }
+//
+//    public void setMember_name(String member_name) {
+//        this.member_name = member_name;
+//    }
 
     public String getStkRequestData() {
         return stkRequestData;
@@ -594,7 +594,7 @@ public class SbsPrinterData extends DataSupport implements Serializable {
                 ", flowNo='" + flowNo + '\'' +
                 ", isMember=" + isMember +
                 ", sign_bitmap=" + sign_bitmap +
-                ", couponData='" + couponData + '\'' +
+//                ", couponData='" + couponData + '\'' +
                 '}';
     }
 }

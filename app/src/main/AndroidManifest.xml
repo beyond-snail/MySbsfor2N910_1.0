@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.zfsbs">
+    package="com.sbsct">
 
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
@@ -29,14 +29,14 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
     <application
-        android:name=".myapplication.MyApplication"
+        android:name="com.sbsct.myapplication.MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/icon_96"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".activity.OperatorLoginActivity1"
+            android:name="com.sbsct.activity.OperatorLoginActivity1"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar"
             android:windowSoftInputMode="stateHidden">
@@ -47,102 +47,102 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activity.SysMainActivity"
+            android:name="com.sbsct.activity.SysMainActivity"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name=".activity.SaleMainActivity"
+            android:name="com.sbsct.activity.SaleMainActivity"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name=".activity.GetLoginInfoActivity"
+            android:name="com.sbsct.activity.GetLoginInfoActivity"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name=".activity.GetLoginInfoActivity1"
+            android:name="com.sbsct.activity.GetLoginInfoActivity1"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name=".activity.SystemManageActivity"
+            android:name="com.sbsct.activity.SystemManageActivity"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name=".activity.ChangeInfoActivity"
+            android:name="com.sbsct.activity.ChangeInfoActivity"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name=".activity.InputAmountActivity"
+            android:name="com.sbsct.activity.InputAmountActivity"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name=".activity.InputAmountActivity2"
+            android:name="com.sbsct.activity.InputAmountActivity2"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name=".activity.ZfPayActivity"
+            android:name="com.sbsct.activity.ZfPayActivity"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name=".activity.ZfPayPreauthActivity"
+            android:name="com.sbsct.activity.ZfPayPreauthActivity"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name=".activity.ZfPayCashActivity"
+            android:name="com.sbsct.activity.ZfPayCashActivity"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name=".activity.RecordInfoActivity"
+            android:name="com.sbsct.activity.RecordInfoActivity"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name=".activity.LoginInfoActivity"
+            android:name="com.sbsct.activity.LoginInfoActivity"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name=".activity.MemberActivity"
+            android:name="com.sbsct.activity.MemberActivity"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name=".activity.SaleUndoActivity"
+            android:name="com.sbsct.activity.SaleUndoActivity"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name=".activity.ChangePassActivity"
+            android:name="com.sbsct.activity.ChangePassActivity"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name=".activity.OperatorChangePass"
+            android:name="com.sbsct.activity.OperatorChangePass"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name=".activity.MasterChangePass"
+            android:name="com.sbsct.activity.MasterChangePass"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name=".activity.RecordItemInfoActivity"
+            android:name="com.sbsct.activity.RecordItemInfoActivity"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name=".activity.ShowInfoCurrentDayData"
+            android:name="com.sbsct.activity.ShowInfoCurrentDayData"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar"
             android:windowSoftInputMode="stateHidden" />
@@ -151,20 +151,20 @@
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar"
             android:windowSoftInputMode="stateHidden" />
-        <activity android:name=".activity.ShiftRoomActivity" />
-        <activity android:name=".activity.ShiftRoomShowActivity" />
-        <activity android:name=".activity.ShiftRoomRecordActivity" />
-        <activity android:name=".activity.ShiftRoomShowitemActivity" />
-        <activity android:name=".activity.test.TestPopActivity" />
+        <activity android:name="com.sbsct.activity.ShiftRoomActivity" />
+        <activity android:name="com.sbsct.activity.ShiftRoomShowActivity" />
+        <activity android:name="com.sbsct.activity.ShiftRoomRecordActivity" />
+        <activity android:name="com.sbsct.activity.ShiftRoomShowitemActivity" />
+        <activity android:name="com.sbsct.activity.test.TestPopActivity" />
 
         <service
-            android:name=".service.UploadService"
+            android:name="com.sbsct.service.UploadService"
             android:enabled="true"
             android:exported="true" />
 
-        <receiver android:name=".service.AlarmReceiver" />
+        <receiver android:name="com.sbsct.service.AlarmReceiver" />
 
-        <activity android:name=".activity.TestActivity">
+        <activity android:name="com.sbsct.activity.TestActivity">
 
             <!-- <intent-filter> -->
             <!-- <action android:name="android.intent.action.MAIN" /> -->
@@ -175,40 +175,40 @@
         </activity>
 
         <receiver
-            android:name=".service.LoginReceiver"
+            android:name="com.sbsct.service.LoginReceiver"
             android:enabled="true"
             android:exported="true"></receiver>
 
-        <activity android:name=".activity.VerificationActivity"
+        <activity android:name="com.sbsct.activity.VerificationActivity"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar"
             android:windowSoftInputMode="stateHidden"></activity>
-        <activity android:name=".activity.YyVerificationActivity"
+        <activity android:name="com.sbsct.activity.YyVerificationActivity"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar"
             android:windowSoftInputMode="stateHidden"></activity>
         <activity
-            android:name=".activity.RechargeActivity"
+            android:name="com.sbsct.activity.RechargeActivity"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name=".activity.OpenCardActivity"
+            android:name="com.sbsct.activity.OpenCardActivity"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name=".activity.CardChangeActivity"
+            android:name="com.sbsct.activity.CardChangeActivity"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name=".activity.ZfPayRechargeActivity"
+            android:name="com.sbsct.activity.ZfPayRechargeActivity"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name=".activity.CheckOperatorLoginActivity"
+            android:name="com.sbsct.activity.CheckOperatorLoginActivity"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar"
             android:windowSoftInputMode="stateHidden" />

@@ -4,12 +4,12 @@
     <dbname value="zfLitePal_db" >
     </dbname>
 
-    <version value="4" >
+    <version value="5" >
     </version>
 
     <list>
         <mapping class = "com.model.SbsPrinterData"></mapping>
-        <mapping class = "com.zfsbs.model.LoginApiResponse"></mapping>
+        <mapping class = "com.sbsct.model.LoginApiResponse"></mapping>
         <mapping class = "com.model.ShiftRoomSave"></mapping>
     </list>
 
